@@ -36,12 +36,20 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-12 animate-fade-in">
-            <div className="text-6xl mb-6 animate-pulse-slow">👋</div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-12 animate-fade-in">
+            <div className="flex items-center gap-4 text-6xl animate-pulse-slow">
+              <span>👋</span>
+              <img
+                src="/foto_AOR.jpeg"
+                alt="Foto de Adrián"
+                className="w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-cyan-400 object-cover"
+              />
+            </div>
+            <h1 className="text-4xl md:text-6xl font-bold text-white text-center md:text-left">
               Hola, soy <span className="text-cyan-400">Adrián</span>
             </h1>
           </div>
+
 
           <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-8 mb-8 animate-slide-up hover:border-cyan-400/50 transition-all duration-300">
             <p className="text-slate-300 text-lg leading-relaxed mb-6">
@@ -59,46 +67,46 @@ export default function HomePage() {
 
           {/* Quick Links */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-animation">
-  <Link href="/sobre-mi" className="group h-full">
-    <div className="flex flex-col justify-between h-full bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:border-cyan-400/50 hover:translate-y-[-5px] transition-all duration-300">
-      <User className="w-8 h-8 text-cyan-400 mb-4" />
-      <h3 className="text-white font-semibold mb-2 group-hover:text-cyan-400 transition-colors duration-300">
-        Sobre mí
-      </h3>
-      <p className="text-slate-400 text-sm">Conoce mi historia, pasiones y experiencia</p>
-    </div>
-  </Link>
+            <Link href="/sobre-mi" className="group h-full">
+              <div className="flex flex-col justify-between h-full bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:border-cyan-400/50 hover:translate-y-[-5px] transition-all duration-300">
+                <User className="w-8 h-8 text-cyan-400 mb-4" />
+                <h3 className="text-white font-semibold mb-2 group-hover:text-cyan-400 transition-colors duration-300">
+                  Sobre mí
+                </h3>
+                <p className="text-slate-400 text-sm">Conoce mi historia, pasiones y experiencia</p>
+              </div>
+            </Link>
 
-  <Link href="/habilidades" className="group h-full">
-    <div className="flex flex-col justify-between h-full bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:border-cyan-400/50 hover:translate-y-[-5px] transition-all duration-300">
-      <Code className="w-8 h-8 text-cyan-400 mb-4" />
-      <h3 className="text-white font-semibold mb-2 group-hover:text-cyan-400 transition-colors duration-300">
-        Habilidades Técnicas
-      </h3>
-      <p className="text-slate-400 text-sm">C, C++, Java, Python, React, Ciberseguridad y más</p>
-    </div>
-  </Link>
+            <Link href="/habilidades" className="group h-full">
+              <div className="flex flex-col justify-between h-full bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:border-cyan-400/50 hover:translate-y-[-5px] transition-all duration-300">
+                <Code className="w-8 h-8 text-cyan-400 mb-4" />
+                <h3 className="text-white font-semibold mb-2 group-hover:text-cyan-400 transition-colors duration-300">
+                  Habilidades Técnicas
+                </h3>
+                <p className="text-slate-400 text-sm">C, C++, Java, Python, React, Ciberseguridad y más</p>
+              </div>
+            </Link>
 
-  <Link href="/proyectos" className="group h-full">
-    <div className="flex flex-col justify-between h-full bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:border-cyan-400/50 hover:translate-y-[-5px] transition-all duration-300">
-      <Globe className="w-8 h-8 text-cyan-400 mb-4" />
-      <h3 className="text-white font-semibold mb-2 group-hover:text-cyan-400 transition-colors duration-300">
-        Proyectos
-      </h3>
-      <p className="text-slate-400 text-sm">IA, aplicaciones web, ciberseguridad y videojuegos</p>
-    </div>
-  </Link>
+            <Link href="/proyectos" className="group h-full">
+              <div className="flex flex-col justify-between h-full bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:border-cyan-400/50 hover:translate-y-[-5px] transition-all duration-300">
+                <Globe className="w-8 h-8 text-cyan-400 mb-4" />
+                <h3 className="text-white font-semibold mb-2 group-hover:text-cyan-400 transition-colors duration-300">
+                  Proyectos
+                </h3>
+                <p className="text-slate-400 text-sm">IA, aplicaciones web, ciberseguridad y videojuegos</p>
+              </div>
+            </Link>
 
-  <Link href="/contacto" className="group h-full">
-    <div className="flex flex-col justify-between h-full bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:border-cyan-400/50 hover:translate-y-[-5px] transition-all duration-300">
-      <Mail className="w-8 h-8 text-cyan-400 mb-4" />
-      <h3 className="text-white font-semibold mb-2 group-hover:text-cyan-400 transition-colors duration-300">
-        Contacto
-      </h3>
-      <p className="text-slate-400 text-sm">Conecta conmigo para oportunidades</p>
-    </div>
-  </Link>
-</div>
+            <Link href="/contacto" className="group h-full">
+              <div className="flex flex-col justify-between h-full bg-slate-800/50 border border-slate-700 rounded-lg p-6 hover:border-cyan-400/50 hover:translate-y-[-5px] transition-all duration-300">
+                <Mail className="w-8 h-8 text-cyan-400 mb-4" />
+                <h3 className="text-white font-semibold mb-2 group-hover:text-cyan-400 transition-colors duration-300">
+                  Contacto
+                </h3>
+                <p className="text-slate-400 text-sm">Conecta conmigo para oportunidades</p>
+              </div>
+            </Link>
+          </div>
 
         </div>
       </section>

@@ -93,7 +93,7 @@ export default function ContactoPage() {
                 <div className="bg-green-900/20 border border-green-700/50 rounded-lg p-4 hover:bg-green-900/30 transition-colors duration-300">
                   <p className="text-green-400 font-medium mb-2">🟢 Disponible para prácticas</p>
                   <p className="text-slate-300 text-sm">
-                    Buscando oportunidades en ciberseguridad, especialmente Red Team
+                    Buscando oportunidades 
                   </p>
                 </div>
                 <div className="space-y-2">
